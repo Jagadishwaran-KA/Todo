@@ -1,5 +1,5 @@
 import { useCallback, useContext } from 'react';
-import TodoContext from '../utils/todoContext';
+import TodoContext from "./TodoContext";
 
 export const useTodoActions = () => {
     const { setTodoItems } = useContext(TodoContext);
