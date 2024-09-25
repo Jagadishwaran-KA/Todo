@@ -1,6 +1,6 @@
 import { useCallback, useContext, useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import TodoContext from '../utils/todoContext';
+import TodoContext from '../utils/TodoContext';
 
 function InputTodo() {
   const inputRef = useRef(null);

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { storedTodoItem, storeTodo } from './utils/dataStorage';
 import InputTodo from './components/InputTodo';
-import TodoContext from './utils/todoContext';
+import TodoContext from './utils/TodoContext';
 import DisplayLayout from './components/DisplayLayout';
 import Header from './components/Header';
 
