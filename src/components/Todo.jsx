@@ -2,13 +2,13 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 import { MdOutlineEdit } from 'react-icons/md';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
-import { useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 function Todo({ title, completed, check, OnDelete, OnEdit, bgColor }) {
   const [isEdit, setIsEdit] = useState(false);
   const newTitle = useRef(null);
 
-  const edit = () => {
+  const edit = useCallback(() => {
     const newValue = newTitle.current.value.trim();
     if (newValue) {
       OnEdit(newValue);
@@ -16,12 +16,12 @@ function Todo({ title, completed, check, OnDelete, OnEdit, bgColor }) {
     } else {
       alert('Todo title cannot be empty.');
     }
-  };
+  }, [isEdit]);
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = useCallback((e) => {
     if (e.key === 'Enter') edit();
     if (e.key === 'Escape') setIsEdit(false);
-  };
+  }, []);
 
   const editable = () => setIsEdit(true);
 
