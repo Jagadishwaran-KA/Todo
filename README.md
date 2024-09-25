@@ -6,5 +6,7 @@ To Start this Project
 2.cd into the folder.
 3.Open Terminal and
 Run - npm install followed by npm run dev
+4.Datas are Stored in the Local Storage - (Data persist upon refresh).
+
 
 ![alt text](image.png)
