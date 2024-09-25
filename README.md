@@ -9,4 +9,5 @@ To Start this Project
 3.Open Terminal and 
    Run - npm install followed by npm run dev
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/61af8d98-dc2a-4c9b-99d6-b6f6215d0297)
+
