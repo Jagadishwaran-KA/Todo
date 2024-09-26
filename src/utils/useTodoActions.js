@@ -7,7 +7,7 @@ export const useTodoActions = () => {
     const editTodo = useCallback((id, newTitle) => {
         setTodoItems((prev) =>
             prev.map((item) =>
-                item.id === id ? { ...item, title: newTitle } : item
+                item.id === id ? { ...item, title: newTitle, completed: false } : item
             )
         );
     }, [setTodoItems]);

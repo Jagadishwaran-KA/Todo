@@ -18,7 +18,7 @@ function InputTodo() {
       inputRef.current.value = '';
       setTodoItems((prev) => [...prev, obj]);
     } else {
-      alert('Todo Value Cannot be Empty');
+      alert('Todo Value Cannot be Empty'); 
     }
   };
 
