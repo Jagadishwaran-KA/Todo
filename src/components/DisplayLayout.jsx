@@ -4,7 +4,7 @@ import Todo from './Todo';
 import { useTodoActions } from '../utils/useTodoActions';
 
 function DisplayLayout() {
-  const backgroundColor = 'bg-green-400';
+  const backgroundColor = 'bg-red-400';
   const { todoItems } = useContext(TodoContext);
   const { editTodo, toggleTodo, deleteTodo } = useTodoActions();
 

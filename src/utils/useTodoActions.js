@@ -21,7 +21,16 @@ export const useTodoActions = () => {
     }, [setTodoItems]);
 
     const deleteTodo = useCallback((id) => {
-        setTodoItems((prev) => prev.filter((item) => item.id !== id));
+        setTodoItems((prev) => {
+            const arr = []
+            for (let index = 0; index < prev.length; index++) {
+                if (prev[index].id === id) {
+                    continue;
+                }
+                arr.push(prev[index]);
+            }
+            return arr;
+        });
     }, [setTodoItems]);
 
     return { editTodo, deleteTodo, toggleTodo };
