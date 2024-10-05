@@ -8,5 +8,8 @@ To Start this Project
 Run - npm install followed by npm run dev
 4.Datas are Stored in the Local Storage - (Data persist upon refresh)
 
+Need to Add Testing code - Fix Some issues and Update the Ui 
+//Nice to have a date picket - Probably move this to typescript soon.
+
 
 ![alt text](image.png)
